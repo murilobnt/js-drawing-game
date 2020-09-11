@@ -41,6 +41,21 @@ here.
 
 * Express (for the server) :heavy_check_mark:
 
+### Cloning this project
+
+In order to clone this project (with its submodules), you may want to
+do, in the terminal:
+
+```sh
+git clone https://github.com/murilobnt/js-drawing-game.git
+cd js-drawing-game
+git submodule init
+git submodule update
+```
+
+PS: This is for Linux OS. If you're using Windows, you will probably
+need to change `cd` to `dir`.
+
 ### User Operations v1
 
 1\. At first, the user is prompted for their names. They can choose
