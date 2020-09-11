@@ -1,0 +1,6 @@
+[submodule "react"]
+	path = react
+	url = ../js-drawing-game-react
+[submodule "server"]
+	path = server
+	url = ../js-drawing-game-server
