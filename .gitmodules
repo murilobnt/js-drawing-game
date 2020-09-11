@@ -4,3 +4,9 @@
 [submodule "server"]
 	path = server
 	url = ../js-drawing-game-server
+[submodule "js-drawing-game-react"]
+	path = react
+	url = https://github.com/murilobnt/js-drawing-game-react
+[submodule "js-drawing-game-server"]
+	path = server
+	url = https://github.com/murilobnt/js-drawing-game-server
