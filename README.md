@@ -30,10 +30,10 @@ frameworks. As of right now, there's only the React version of it.
 
 #### Development Stage
 
-1. React :construction: :heavy_check_mark:
-2. Vue :x:
-3. Angular :x:
-4. Svelte :x:
+1. React :heavy_check_mark:
+2. Vue :heavy_check_mark:
+3. Angular :heavy_check_mark:
+4. Svelte :x: :construction:
 
 There's one extra use of a library for the multiplayer server.
 If any other library show up along of the development, they'll be added
