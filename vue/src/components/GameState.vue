@@ -118,6 +118,7 @@ export default {
       this.subjects = []
       this.votes_on_player = {}
       this.results = {}
+      this.disabled = {}
       this.connect()
     },
 
