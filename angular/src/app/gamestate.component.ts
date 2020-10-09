@@ -61,7 +61,6 @@ export class GameStateComponent {
   }
 
   on_next(img){
-    console.log("Received img: " + img)
     const subject = this.subjects[this.subject_index];
     this.ws.send(JSON.stringify({action: 'send_drawing', subject: subject, img:img, cli_hash: this.cli_hash}))
     this.game_state = 'waiting_screen'
@@ -127,7 +126,6 @@ export class GameStateComponent {
         alert(j_message.reason + ". Finishing the game...");
       break;
       case 'start_drawing':
-        console.log(this.game_state)
         this.subjects = j_message.subjects
         this.game_state = 'drawing'
       break;
