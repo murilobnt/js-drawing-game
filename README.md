@@ -33,13 +33,17 @@ frameworks. As of right now, there's only the React version of it.
 1. React :heavy_check_mark:
 2. Vue :heavy_check_mark:
 3. Angular :heavy_check_mark:
-4. Svelte :x: :construction:
+4. Svelte :heavy_check_mark:
 
 There's one extra use of a library for the multiplayer server.
 If any other library show up along of the development, they'll be added
 here.
 
-* Express (for the server) :heavy_check_mark:
+* [Express](https://expressjs.com/pt-br/) (for the server)
+* [react-canvas-draw](https://www.npmjs.com/package/react-canvas-draw) (react)
+* [vue-drawing](https://www.npmjs.com/package/vue-drawing) (vue)
+* [ng2-canvas-whiteboard](https://www.npmjs.com/package/ng2-canvas-whiteboard) (angular)
+* [canvas-free-drawing](https://www.npmjs.com/package/canvas-free-drawing) (svelte)
 
 ### Cloning this project
 
