@@ -37,7 +37,7 @@ export default{
   },
 
   mounted: function() {
-    for (let subject in this.game_content) {      
+    for (let subject in this.game_content) {
       this.disabled[subject] = false
     }
   }

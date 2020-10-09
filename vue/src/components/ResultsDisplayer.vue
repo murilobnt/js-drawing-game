@@ -2,7 +2,7 @@
   <div>
     <h2>Results!</h2>
     <h3>Podium</h3>
-      <p v-for='(item, key) in podium' :key="key" :style="font_size[key]">
+      <p v-for='(item, key) in podium' :key="key" :style="{'font-size' : font_size[key]}">
         In the {{prefix[key]}} place: {{item[0]}}, with {{item[1]}} vote(s)!
       </p>
     <button v-on:click="$emit('reset_client')">Main Menu</button>
