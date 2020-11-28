@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms'
 
 import { AppComponent } from './app.component';
 import { GameStateComponent } from './gamestate.component'
@@ -10,6 +11,10 @@ import { ResultsDisplayerComponent } from './resultsdisplayer.component'
 
 import { CanvasWhiteboardModule } from 'ng2-canvas-whiteboard';
 
+import { SubjectFormComponent } from './subjectform.component'
+import { SubjectListComponent } from './subjectlist.component'
+import { InputComponent } from './input.component'
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,11 +22,15 @@ import { CanvasWhiteboardModule } from 'ng2-canvas-whiteboard';
     GameMenuComponent,
     DrawingBoardComponent,
     VoteDrawingsComponent,
-    ResultsDisplayerComponent
+    ResultsDisplayerComponent,
+    SubjectListComponent,
+    SubjectFormComponent,
+    InputComponent
   ],
   imports: [
     BrowserModule,
-    CanvasWhiteboardModule
+    CanvasWhiteboardModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

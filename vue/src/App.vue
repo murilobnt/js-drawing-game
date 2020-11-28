@@ -1,16 +1,16 @@
 <template>
   <div id="app">
-    <GameState />
+    <SubjectsList />
   </div>
 </template>
 
 <script>
-import GameState from './components/GameState.vue'
+import SubjectsList from './components/SubjectsList.vue'
 
 export default {
   name: 'App',
   components: {
-    GameState
+    SubjectsList
   }
 }
 </script>

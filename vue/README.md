@@ -1,4 +1,4 @@
-# vue
+# jdg-vue3
 
 ## Project setup
 ```

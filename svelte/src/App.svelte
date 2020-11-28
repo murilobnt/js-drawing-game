@@ -1,9 +1,9 @@
 <script>
-	import GameState from './GameState.svelte'
+	import SubjectsList from './SubjectsList.svelte'
 </script>
 
 <main>
-	<GameState />
+	<SubjectsList />
 </main>
 
 <style>

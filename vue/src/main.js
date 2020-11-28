@@ -1,10 +1,10 @@
-import Vue from 'vue'
+import { createApp } from 'vue'
 import App from './App.vue'
 import VueDrawing from "vue-drawing"
 
-Vue.config.productionTip = false
-Vue.use(VueDrawing);
+const app = createApp(App)
 
-new Vue({
-  render: h => h(App),
-}).$mount('#app')
+app.config.productionTip = false
+app.use(VueDrawing);
+
+app.mount('#app')
