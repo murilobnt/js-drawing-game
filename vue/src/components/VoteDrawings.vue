@@ -17,7 +17,7 @@
         </tbody>
       </table>
     </div>
-    <button v-on:click="$emit('on_finish')">Finish!</button>
+    <button v-on:click="$emit('onFinish')">Finish!</button>
   </div>
 </template>
 
@@ -32,7 +32,7 @@ export default{
   methods: {
     vote(content, author){
       this.disabled[content] = true
-      this.$emit('cast_vote', content, author)
+      this.$emit('castVote', content, author)
     }
   },
 

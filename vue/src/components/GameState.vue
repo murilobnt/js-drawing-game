@@ -20,8 +20,8 @@
     <div v-if="this.game_state === 'votes'" >
       <VoteDrawings :game_content="this.game_content"
                     :votes="this.votes"
-                    @cast_vote="cast_vote"
-                    @on_finish="on_finish" />
+                    @castVote="castVote"
+                    @onFinish="onFinish" />
     </div>
 
     <div v-if="this.game_state === 'results'">
@@ -88,7 +88,7 @@ export default {
       this.name = name
     },
 
-    cast_vote(subject, player_name){
+    castVote(subject, player_name){
       if(this.disabled[subject]) {
         alert("Already voted in this category.")
         return
@@ -101,7 +101,7 @@ export default {
       this.disabled[subject] = true
     },
 
-    on_finish(){
+    onFinish(){
       this.game_state = 'waiting_screen'
       this.await_reason = 'Waiting for all voters to cast their votes.'
       this.ws.send(JSON.stringify({action: 'end_votes', votes: this.votes_on_player}));
